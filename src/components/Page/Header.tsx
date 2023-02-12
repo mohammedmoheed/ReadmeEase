@@ -8,12 +8,19 @@ interface PageHeaderProps {
 
 function PageHeader({
   title,
-  description = "Create beautiful and professional readme.md files effortlessly with ReadmeEase. Our platform features a drag and drop interface and provides customizable templates using next.js and tailwindcss.",
+  description,
 }: PageHeaderProps) {
   return (
     <Head>
       <title>{title}</title>
-      <meta name="description" content={description} />
+      {
+        !description || description.trim().length < 10 ? (
+          <meta name="description" content="Create beautiful and professional readme.md files effortlessly with ReadmeEase. Our platform features a drag and drop interface and provides customizable templates using next.js and tailwindcss." />
+        )
+         : (
+          <meta name="description" content={description} />
+         )
+      }
       <meta
         name="keywords"
         content="Readme-Ease, readme-ease, readme-editor, nextjs, tailwindcss"
