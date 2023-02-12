@@ -6,7 +6,10 @@ interface PageHeaderProps {
   description?: string;
 }
 
-function PageHeader({ title, description }: PageHeaderProps) {
+function PageHeader({
+  title,
+  description = "Create beautiful and professional readme.md files effortlessly with ReadmeEase. Our platform features a drag and drop interface and provides customizable templates using next.js and tailwindcss.",
+}: PageHeaderProps) {
   return (
     <Head>
       <title>{title}</title>
