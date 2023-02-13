@@ -36,6 +36,11 @@ export const fileSlice = createSlice({
 });
 // get all created user files
 export const getUserFiles = (state: any) => state.userFiles.files;
+// get file by Id
+export const getFileById =
+  (id: any): any =>
+  (state: any) =>
+    state.userFiles.files.find((file: FileItem) => file.id === id);
 
 export const { createNewFile } = fileSlice.actions;
 
