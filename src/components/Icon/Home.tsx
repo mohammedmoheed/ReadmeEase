@@ -1,6 +1,4 @@
-interface IconProps {
-  fillColor?: string;
-}
+import { IconProps } from "./IconType";
 
 function Home({ fillColor }: IconProps): JSX.Element {
   if (!fillColor || fillColor.trim().length < 3) {
