@@ -7,7 +7,7 @@ function Trash({ fillColor }: IconProps): JSX.Element {
   return (
     <svg
       viewBox="0 0 24 24"
-      fill="#2c2d31"
+      fill="none"
       strokeWidth={1.5}
       stroke={fillColor}
       className="w-5 h-5"
