@@ -1,7 +1,8 @@
 import PageHeader from "@/components/Page/Header";
 import Header from "@/components/Banner/Header";
 import { Poppins } from "@next/font/google";
-import CreateReadmeFileButton from "@/components/Button/CreateReadmeFileButton";
+import { CreateReadmeFileButton } from "@/components/Button";
+import PreviewFilesContainer from "@/components/Container/PreviewFilesContainer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,9 +21,12 @@ export default function DocsPage() {
       <Header />
       <main className="relative w-full h-auto">
         <div className="mx-auto py-10 px-6 max-w-7xl w-full">
-            <div className="flex flex-row items-center justify-between w-full">
-                <CreateReadmeFileButton />
-            </div>
+          <div className="flex flex-row items-center justify-between w-full">
+            <CreateReadmeFileButton />
+          </div>
+          <div className="py-10 w-full">
+            <PreviewFilesContainer />
+          </div>
         </div>
       </main>
     </div>
