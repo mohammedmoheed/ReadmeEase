@@ -35,7 +35,7 @@ function Header() {
 
   return (
     <header className="relative top-0 w-full bg-[#0a0a0a] border-b border-solid border-b-[#333]">
-      <div className="mx-auto max-w-7xl w-full">
+      <div className="mx-auto max-w-[1440px] w-full">
         <nav className="relative px-6 py-3 flex flex-row items-center justify-between w-full bg-transparent">
           <div className="flex items-center justify-center w-auto">
             <Link

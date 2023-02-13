@@ -20,7 +20,7 @@ export default function DocsPage() {
       />
       <Header />
       <main className="relative w-full h-auto">
-        <div className="mx-auto py-10 px-6 max-w-7xl w-full">
+        <div className="mx-auto py-10 px-6 max-w-[1440px] w-full">
           <div className="flex flex-row items-center justify-between w-full">
             <CreateReadmeFileButton />
           </div>
