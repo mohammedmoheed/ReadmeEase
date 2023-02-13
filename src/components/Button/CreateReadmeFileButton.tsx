@@ -8,7 +8,7 @@ function CreateReadmeFileButton() {
       title="Create New Readme"
     >
       <Plus />
-      <span className="text-sm text-center text-current font-normal tracking-wide">
+      <span className="ml-1 text-sm text-center text-current font-normal tracking-wide">
         Create New File
       </span>
     </button>
