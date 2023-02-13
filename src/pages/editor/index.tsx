@@ -9,7 +9,7 @@ const poppins = Poppins({
   display: "swap",
 });
 
-export default function Home() {
+export default function EditorPage() {
   return (
     <div className={poppins.className}>
       <PageHeader
