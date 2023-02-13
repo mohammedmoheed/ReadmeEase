@@ -9,7 +9,7 @@ function CreateReadmeFileButton() {
     >
       <Plus />
       <span className="text-sm text-center text-current font-normal tracking-wide">
-        Add New File
+        Create New File
       </span>
     </button>
   );
