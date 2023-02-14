@@ -36,3 +36,21 @@
   background-color: var(--neutral-gray-800);
   border-radius: 0.35rem;
 }
+
+.preview pre {
+  margin-top: 24px;
+  margin-bottom: 14px;
+  display: block;
+  width: 100%;
+}
+
+.preview pre code {
+  display: block;
+  padding: 16px;
+  overflow: auto;
+  width: 100%;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  background-color: var(--primary-dark-500);
+  border-radius: 0.4rem;
+}
