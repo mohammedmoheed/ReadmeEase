@@ -1,3 +1,29 @@
+:root {
+  --primary-white-900: #ffffff;
+  --primary-white-500: #c9d1d9;
+  --primary-dark-900: #000000;
+  --primary-dark-700: #0d1117;
+  --primary-dark-500: #161b22;
+  --neutral-gray-900: #21262d;
+  --neutral-gray-800: #6e768166;
+  --neutral-gray-700: #8b949e;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* preview container styles */
+
+.preview > :first-child {
+  margin-top: 0px;
+}
+
+/* paragraph */
+.preview > p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: var(--primary-white-500);
+}
