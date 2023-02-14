@@ -58,17 +58,19 @@ function Header() {
                 <Link
                   href={item.path}
                   className={`flex items-center justify-center w-auto ${
-                    item.path === router.asPath
+                    item.path.replace("/", "") === router.asPath.split("/")[1]
                       ? "text-white"
                       : "text-[#696969] hover:text-[#c9d1d9] focus-within:text-[#c9d1d9]"
                   }`}
                   aria-label={`Go to ${item.title}`}
                   title={item.title}
                 >
-                  {item.svg}
-                  <span className="ml-1 text-base text-center text-current font-medium tracking-wide">
-                    {item.title}
-                  </span>
+                  <div className="flex items-center justify-center">
+                    {item.svg}
+                    <span className="ml-1 text-base text-center text-current font-medium tracking-wide">
+                      {item.title}
+                    </span>
+                  </div>
                 </Link>
               </li>
             ))}
