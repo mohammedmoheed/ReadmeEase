@@ -1,7 +1,7 @@
 import PageHeader from "@/components/Page/Header";
 import Header from "@/components/Banner/Header";
 import { Poppins } from "@next/font/google";
-import EditorMainContainer from "@/components/Container/EditorMainContainer";
+import EditorPageContainer from "@/components/Container/EditorPageContainer";
 import { useRouter } from "next/router";
 
 const poppins = Poppins({
@@ -23,7 +23,7 @@ export default function EditorIdPage() {
       />
       <Header />
       <main className="block w-full">
-        <EditorMainContainer id={id} />
+        <EditorPageContainer id={id} />
       </main>
     </div>
   );
