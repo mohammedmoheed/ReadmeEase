@@ -1,7 +1,7 @@
 import EditorTitleBar from "@/components/Banner/EditorTitlebar";
 import { getFileById } from "@/store/slices/fileSlice";
 import { useSelector } from "react-redux";
-import DesktopSidebar from "../Sidebar/DesktopEditorSidebar";
+import DesktopSidebar from "../Sidebar/DesktopSidebar";
 import FileTitlebarSkeleton from "../Skeleton/FileTitlebarSkeleton";
 import EditorContainer from "./EditorContainer";
 
@@ -14,7 +14,7 @@ function EditorPageContainer({ id }: EditorMainContainerProps): JSX.Element {
   return (
     <div className="relative mx-auto max-w-[1440px] w-full h-full overflow-x-hidden">
       {!file ? <FileTitlebarSkeleton /> : <EditorTitleBar />}
-      <div className="flex flex-row items-start w-full">
+      <div className="relative flex flex-row items-start w-full">
         <DesktopSidebar />
         <EditorContainer />
       </div>
