@@ -14,7 +14,7 @@ function EditorPageContainer({ id }: EditorMainContainerProps): JSX.Element {
   return (
     <div className="relative mx-auto max-w-[1440px] w-full h-full overflow-x-hidden">
       {!file ? <FileTitlebarSkeleton /> : <EditorTitleBar />}
-      <div className="relative flex flex-row items-start w-full">
+      <div className="relative flex flex-col md:flex-row items-center md:items-start w-full">
         <DesktopSidebar />
         <EditorContainer />
       </div>

@@ -14,7 +14,15 @@ interface UserFileState {
 }
 
 const initialState: UserFileState = {
-  files: [],
+  files: [
+    {
+      id: "43001494-11eb-4b55-926d-13e3273664f9",
+      title: "File_1_With_1676368734006",
+      body: "",
+      createdAt: 1676368734006,
+      updatedAt: 1676368734006
+    }
+  ],
 };
 
 export const fileSlice = createSlice({
