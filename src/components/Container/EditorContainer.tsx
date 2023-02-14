@@ -28,6 +28,10 @@ function EditorContainer(): JSX.Element {
           value={markdownValue}
           language="markdown"
           aria-label="Markdown Editor"
+          options={{
+            fontSize: 16,
+            wordWrap: "on"
+          }}
         />
       </div>
       <div className="relative flex flex-col items-start justify-start min-w-[280px] w-full max-w-full md:max-w-[50%] h-auto overflow-y-hidden">
