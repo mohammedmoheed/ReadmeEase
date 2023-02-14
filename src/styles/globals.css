@@ -170,12 +170,15 @@
 }
 
 /* link */
-
+ul li a,
+ol li a,
 .preview p a {
   color: var(--primary-orange-500);
   text-decoration: none;
 }
 
+ul li a:hover,
+ol li a:hover,
 .preview p a:hover {
   text-decoration: underline;
 }
