@@ -2,7 +2,9 @@ import Editor from "@monaco-editor/react";
 import { useState } from "react";
 
 function EditorContainer(): JSX.Element {
-  const [markdownValue, setMarkdownValue] = useState<string | undefined>("// Add some comment");
+  const [markdownValue, setMarkdownValue] = useState<string | undefined>(
+    "// Add some comment"
+  );
   function handleOnChange(val: any) {
     setMarkdownValue(val);
   }
@@ -18,6 +20,9 @@ function EditorContainer(): JSX.Element {
         className="min-h-[calc(100vh-155px)]"
         theme="vs-dark"
         onChange={handleOnChange}
+        loading={
+          <div className="animate-pulse block min-h-[calc(100vh-110px)] h-full w-full bg-[#111]"></div>
+        }
         value={markdownValue}
         defaultLanguage="markdown"
         defaultValue={markdownValue}
