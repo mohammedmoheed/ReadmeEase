@@ -27,3 +27,12 @@
   letter-spacing: 0.5px;
   color: var(--primary-white-500);
 }
+
+.preview p code {
+  padding: 0.125rem 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  background-color: var(--neutral-gray-800);
+  border-radius: 0.35rem;
+}
