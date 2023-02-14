@@ -8,7 +8,7 @@ function Plus({ fillColor }: IconProps): JSX.Element {
     <svg
       viewBox="0 0 24 24"
       strokeWidth={1.5}
-      fill={fillColor}
+      fill="none"
       stroke={fillColor}
       className="w-5 h-5"
     >
