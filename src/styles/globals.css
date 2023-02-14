@@ -28,6 +28,7 @@
   color: var(--primary-white-500);
 }
 
+/* escaping backticks */
 .preview p code {
   padding: 0.125rem 0.35rem;
   font-size: 0.9rem;
@@ -37,6 +38,7 @@
   border-radius: 0.35rem;
 }
 
+/* code block */
 .preview pre {
   margin-top: 24px;
   margin-bottom: 14px;
@@ -55,7 +57,7 @@
   border-radius: 0.4rem;
 }
 
-
+/* headings */
 .preview h1,
 .preview h2,
 .preview h3,
@@ -96,4 +98,57 @@
 .preview h6 {
   font-size: 0.85rem;
   color: #8b949e;
+}
+
+/* unordered and ordered list */
+.preview ul,
+.preview ol {
+  padding-left: 2rem;
+  margin-bottom: 16px;
+}
+
+.preview ol {
+  counter-reset: ordered-list;
+}
+
+.preview ul li,
+.preview ol li{
+    position: relative;
+    color: var(--primary-white-500);
+}
+
+.preview ol li:not(:first-child){
+    margin-top: 0.25rem;
+}
+
+.preview ol li::before{
+    position: absolute;
+    counter-increment: ordered-list;
+    content: counter(ordered-list) ".";
+    top: 50%;
+    left: -16px;
+    translate: 0 -50%;
+}
+
+.preview ul li::before,
+.preview ul li ul li::before,
+.preview ul li ul li ul li::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 9px;
+  left: -18px;
+  width: 7px;
+  height: 7px;
+  background: currentColor;
+  border-radius: 50%;
+}
+
+.preview ul li ul li::before {
+  background: transparent;
+  border: 1px solid currentColor;
+}
+
+.preview ul li ul li ul li::before {
+  border-radius: 0;
 }
