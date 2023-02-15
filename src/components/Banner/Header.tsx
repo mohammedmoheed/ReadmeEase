@@ -21,14 +21,8 @@ function Header() {
     },
     {
       id: "SqFI9VXrMu",
-      title: "Docs",
-      path: "/docs",
-      svg: <Bookmark />,
-    },
-    {
-      id: "z1Ht6MIhxG",
-      title: "Editor",
-      path: "/editor",
+      title: "Files",
+      path: "/files",
       svg: <Doc />,
     },
   ];

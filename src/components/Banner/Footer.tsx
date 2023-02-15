@@ -50,12 +50,12 @@ function Footer(): JSX.Element {
             </li>
             <li className="w-auto">
               <Link
-                href="/docs"
+                href="/files"
                 className="text-sm text-center text-[#c9d1d9] hover:text-white font-medium tracking-wide"
-                aria-label="Link: Docs"
-                title="Link: Docs"
+                aria-label="Link: Files"
+                title="Link: Files"
               >
-                Docs
+                Files
               </Link>
             </li>
           </ul>

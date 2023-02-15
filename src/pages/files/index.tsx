@@ -11,7 +11,7 @@ const poppins = Poppins({
   display: "swap",
 });
 
-export default function DocsPage() {
+export default function FilePage() {
   return (
     <div className={poppins.className}>
       <PageHeader

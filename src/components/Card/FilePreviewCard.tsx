@@ -72,7 +72,7 @@ function FilePreviewCard({
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-y-2 w-full">
-            <PreviewFileCardButton path={`/docs/${id}`} />
+            <PreviewFileCardButton path={`/files/${id}`} />
             <EditFileCardButton path={`/editor/${id}`} />
           </div>
         </div>
