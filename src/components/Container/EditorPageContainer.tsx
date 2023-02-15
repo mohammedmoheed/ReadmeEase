@@ -1,22 +1,16 @@
 import EditorTitleBar from "@/components/Banner/EditorTitlebar";
-import { getFileById } from "@/store/slices/fileSlice";
-import { useSelector } from "react-redux";
-import DesktopSidebar from "../Sidebar/DesktopSidebar";
-import FileTitlebarSkeleton from "../Skeleton/FileTitlebarSkeleton";
+import SectionSidebar from "@/components/Sidebar/SectionSidebar";
 import EditorContainer from "./EditorContainer";
+import PreviewContainer from "./PreviewContainer";
 
-interface EditorMainContainerProps {
-  id?: string | string[];
-}
-
-function EditorPageContainer({ id }: EditorMainContainerProps): JSX.Element {
-  const file = useSelector(getFileById(id));
+function EditorPageContainer(): JSX.Element {
   return (
     <div className="relative mx-auto max-w-[1440px] w-full h-full overflow-x-hidden">
-      {!file ? <FileTitlebarSkeleton /> : <EditorTitleBar />}
+      <EditorTitleBar />
       <div className="relative flex flex-col md:flex-row items-center md:items-start w-full">
-        <DesktopSidebar />
+        <SectionSidebar />
         <EditorContainer />
+        <PreviewContainer />
       </div>
     </div>
   );
