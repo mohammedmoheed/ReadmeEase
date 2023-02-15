@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { RELogo } from "@/components/Icon";
 
 function Footer(): JSX.Element {
   return (
@@ -12,9 +13,12 @@ function Footer(): JSX.Element {
               aria-label="ReadmeEase logo"
               title="ReadmeEase"
             >
-              <span className="text-2xl text-center text-white font-medium tracking-wider">
-                ReadmeEase
-              </span>
+              <div className="flex items-center justify-center w-auto">
+                <RELogo fillColor="#e56643" />
+                <span className="ml-2 text-2xl text-center text-white font-medium tracking-wider">
+                  ReadmeEase
+                </span>
+              </div>
             </Link>
           </div>
           <div className="w-auto">

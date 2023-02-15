@@ -7,5 +7,17 @@ import Page from "./Page";
 import Trash from "./Trash";
 import DoubleRightArrow from "./DoubleRightArrow";
 import DoubleLeftArrow from "./DoubleLeftArrow";
+import RELogo from "./RELogo";
 
-export { Bookmark, BookmarkSquare, Doc, DoubleLeftArrow, DoubleRightArrow, Home, Page, Plus, Trash };
+export {
+  Bookmark,
+  BookmarkSquare,
+  Doc,
+  DoubleLeftArrow,
+  DoubleRightArrow,
+  Home,
+  Page,
+  Plus,
+  RELogo,
+  Trash,
+};
