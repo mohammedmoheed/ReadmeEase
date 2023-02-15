@@ -42,7 +42,7 @@ export default function Home(): JSX.Element {
                   <p className="mt-4 text-base text-center text-[#787878] font-medium tracking-wide">
                     Effortlessly manage project READMEs with{" "}
                     <span className="px-1.5 py-0.5 text-[#f1f1f1] bg-[#6e768166] rounded">
-                      ReadmeEase's
+                      ReadmeEase&#39;s
                     </span>{" "}
                     simple and intuitive editor. Create custom sections and
                     personalize your readme in no time.
