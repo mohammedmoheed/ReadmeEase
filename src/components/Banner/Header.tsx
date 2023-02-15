@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Home, Doc, RELogo } from "@/components/Icon";
 import { useRouter } from "next/router";
+import { ProjectStar } from "@/components/Button";
 
 interface MenuList {
   id: string;
@@ -81,6 +82,9 @@ function Header() {
               </li>
             ))}
           </ul>
+          <div className="ml-auto flex items-center justify-center w-auto">
+            <ProjectStar />
+          </div>
         </nav>
       </div>
     </header>
