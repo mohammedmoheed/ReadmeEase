@@ -1,8 +1,8 @@
 import PageHeader from "@/components/Page/Header";
-import Header from "@/components/Banner/Header";
 import { Poppins } from "@next/font/google";
 import { CreateReadmeFileButton } from "@/components/Button";
-import PreviewFilesContainer from "@/components/Container/PreviewFilesContainer";
+import { PreviewFilesContainer } from "@/components/Container";
+import { Header, Footer } from "@/components/Banner";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -29,6 +29,7 @@ export default function DocsPage() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

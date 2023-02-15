@@ -1,7 +1,7 @@
 import PageHeader from "@/components/Page/Header";
-import Header from "@/components/Banner/Header";
 import { Poppins } from "@next/font/google";
 import { EditorPageContainer } from "@/components/Container";
+import { Header, Footer } from "@/components/Banner";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,6 +21,7 @@ export default function EditorIdPage() {
       <main className="block w-full">
         <EditorPageContainer />
       </main>
+      <Footer />
     </div>
   );
 }

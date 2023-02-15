@@ -13,7 +13,7 @@ function SectionSidebar(): JSX.Element {
   return (
     <>
       <aside
-        className={`absolute top-0 left-0 w-full min-h-[calc(100vh-110px)] h-full bg-[#111] transition-[max-width] z-10 duration-150 ease-linear border-r border-solid border-r-[#333] overflow-auto md:overflow-hidden ${
+        className={`absolute top-0 left-0 w-full min-h-[calc(100vh-110px)] h-full bg-[#111] transition-[max-width] z-10 duration-150 ease-linear border-r border-solid border-r-[#333] overflow-hidden md:overflow-hidden ${
           isSidebarOpen ? "max-w-[240px]" : "max-w-0"
         }`}
       >
