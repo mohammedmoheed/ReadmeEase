@@ -1,5 +1,5 @@
-import EditorTitlebar from "./EditorTitlebar";
+import EditorTitleBar from "./EditorTitlebar";
 import Header from "./Header";
 import Footer from "./Footer";
 
-export { EditorTitlebar, Footer, Header };
+export { EditorTitleBar, Footer, Header };

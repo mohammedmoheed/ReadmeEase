@@ -24,7 +24,7 @@ export default function EditorIdPage() {
       />
       <Header />
       <main className="block w-full">
-        {!id ? <EditorPageSkeleton /> : <EditorPageContainer />}
+        {!id ? <EditorPageSkeleton /> : <EditorPageContainer id={id} />}
       </main>
       <Footer />
     </div>
