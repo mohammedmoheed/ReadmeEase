@@ -2,13 +2,19 @@ import { Page } from "@/components/Icon";
 import {
   DeleteReadmeFileButton,
   SaveReadmeFileButton,
-  ToggleSidebarButton,
 } from "@/components/Button";
 
-function EditorTitleBar({ id }: { id: string | string[] }){
+function EditorTitleBar({
+  id,
+  fileName,
+  body,
+}: {
+  id: string | string[];
+  fileName: string;
+  body: string;
+}) {
   return (
     <nav className="flex items-center justify-start w-full bg-[#111] border-b border-solid border-b-[#333]">
-      <ToggleSidebarButton />
       <div className="px-4 py-2 flex items-center justify-between w-auto flex-auto h-auto">
         <div className="flex flex-row items-center justify-center w-auto h-full">
           <Page />
@@ -17,13 +23,13 @@ function EditorTitleBar({ id }: { id: string | string[] }){
               Document Name:
             </span>
             <p className="text-sm text-center text-white font-medium tracking-wide">
-              File_1_With_1666239874
+              {fileName}
             </p>
           </div>
         </div>
         <div className="flex items-center justify-center gap-x-4 w-auto">
           <DeleteReadmeFileButton id={id} />
-          <SaveReadmeFileButton />
+          <SaveReadmeFileButton id={id} body={body} />
         </div>
       </div>
     </nav>

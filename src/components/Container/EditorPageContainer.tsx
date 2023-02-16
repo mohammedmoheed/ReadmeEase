@@ -1,25 +1,21 @@
-import { EditorTitleBar } from "@/components/Banner";
-import SectionSidebar from "@/components/Sidebar/SectionSidebar";
-import { getFileById } from "@/store/slices/fileSlice";
+import { FileItem, getFileById } from "@/store/slices/fileSlice";
 import { useSelector } from "react-redux";
 import EditorPageFileNotExist from "../Skeleton/EditorPageFileNotExist";
-import { EditorContainer, PreviewContainer } from "./index";
+import { EditorContainer } from "./index";
 
 function EditorPageContainer({ id }: { id: string | string[] }): JSX.Element {
-  const file = useSelector(getFileById(id));
+  const file: FileItem = useSelector(getFileById(id));
+
   return (
     <div className="relative mx-auto max-w-[1440px] w-full h-full overflow-x-hidden">
       {!file ? (
         <EditorPageFileNotExist />
       ) : (
-        <>
-          <EditorTitleBar id={id} />
-          <div className="relative flex flex-col md:flex-row items-center md:items-start w-full">
-            <SectionSidebar />
-            <EditorContainer />
-            <PreviewContainer />
-          </div>
-        </>
+        <EditorContainer
+          id={file.id}
+          defaultValue={file.body}
+          fileName={file.title}
+        />
       )}
     </div>
   );

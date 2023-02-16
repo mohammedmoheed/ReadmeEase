@@ -9,10 +9,12 @@ import DoubleRightArrow from "./DoubleRightArrow";
 import DoubleLeftArrow from "./DoubleLeftArrow";
 import RELogo from "./RELogo";
 import DownArrow from "./DownArrow";
+import Clock from "./Clock";
 
 export {
   Bookmark,
   BookmarkSquare,
+  Clock,
   Doc,
   DoubleLeftArrow,
   DoubleRightArrow,

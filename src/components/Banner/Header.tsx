@@ -12,6 +12,7 @@ interface MenuList {
 
 function Header() {
   const router = useRouter();
+  const isDevelopmentEnv = process.env.NODE_ENV;
 
   const menu_list: Array<MenuList> = [
     {
@@ -31,15 +32,17 @@ function Header() {
   return (
     <header className="relative top-0 w-full bg-[#0a0a0a] border-b border-solid border-b-[#333]">
       <div className="mx-auto max-w-[1440px] w-full">
-        <div className="p-2 flex items-center justify-between w-full bg-black">
-          <p className="text-base text-center text-[#c9d1d9] font-normal tracking-wide">
-            <span className="hidden sm:inline">
-              You are viewing this project in{" "}
-            </span>
-            <span className="text-white font-medium">&#96;beta&#96;</span>{" "}
-            <span>environment</span>
-          </p>
-        </div>
+        {process.env.NODE_ENV === "development" && (
+          <div className="p-2 flex items-center justify-between w-full bg-black">
+            <p className="text-base text-center text-[#c9d1d9] font-normal tracking-wide">
+              <span className="hidden sm:inline">
+                You are viewing this project in{" "}
+              </span>
+              <span className="text-white font-medium">&#96;beta&#96;</span>{" "}
+              <span>environment</span>
+            </p>
+          </div>
+        )}
         <nav className="relative px-6 py-3 flex flex-row items-center justify-start w-full bg-transparent">
           <div className="flex items-center justify-center w-auto">
             <Link

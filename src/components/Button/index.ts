@@ -3,7 +3,6 @@ import EditFileCardButton from "./EditFileCardButton";
 import CreateReadmeFileButton from "./CreateReadmeFileButton";
 import DeleteReadmeFileButton from "./DeleteReadmeFileButton";
 import SaveReadmeFileButton from "./SaveReadmeFileButton";
-import ToggleSidebarButton from "./ToggleSidebarButton";
 import ProjectStar from "./ProjectStar";
 
 export {
@@ -13,5 +12,4 @@ export {
   CreateReadmeFileButton,
   DeleteReadmeFileButton,
   SaveReadmeFileButton,
-  ToggleSidebarButton
 };
