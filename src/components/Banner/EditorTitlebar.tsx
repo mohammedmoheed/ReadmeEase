@@ -4,7 +4,7 @@ import {
   SaveReadmeFileButton,
 } from "@/components/Button";
 
-function EditorTitleBar({
+function EditorTitlebar({
   id,
   fileName,
   body,
@@ -36,4 +36,4 @@ function EditorTitleBar({
   );
 }
 
-export default EditorTitleBar;
+export default EditorTitlebar;
