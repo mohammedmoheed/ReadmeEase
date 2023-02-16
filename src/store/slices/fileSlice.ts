@@ -20,8 +20,8 @@ const initialState: UserFileState = {
       title: "File_1_With_1676368734006",
       body: "",
       createdAt: 1676368734006,
-      updatedAt: 1676368734006
-    }
+      updatedAt: 1676368734006,
+    },
   ],
 };
 
@@ -40,6 +40,11 @@ export const fileSlice = createSlice({
       };
       state.files.push(newFileData);
     },
+    deleteFileById: (state, action) => {
+      const id = action.payload;
+      const updatedFiles = state.files.filter((file: any) => file.id !== id);
+      state.files = updatedFiles;
+    },
   },
 });
 // get all created user files
@@ -50,6 +55,6 @@ export const getFileById =
   (state: any) =>
     state.userFiles.files.find((file: FileItem) => file.id === id);
 
-export const { createNewFile } = fileSlice.actions;
+export const { createNewFile, deleteFileById } = fileSlice.actions;
 
 export default fileSlice.reducer;

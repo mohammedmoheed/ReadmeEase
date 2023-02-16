@@ -5,7 +5,7 @@ import {
   ToggleSidebarButton,
 } from "@/components/Button";
 
-function EditorTitleBar(): JSX.Element {
+function EditorTitleBar({ id }: { id: string | string[] }){
   return (
     <nav className="flex items-center justify-start w-full bg-[#111] border-b border-solid border-b-[#333]">
       <ToggleSidebarButton />
@@ -22,7 +22,7 @@ function EditorTitleBar(): JSX.Element {
           </div>
         </div>
         <div className="flex items-center justify-center gap-x-4 w-auto">
-          <DeleteReadmeFileButton />
+          <DeleteReadmeFileButton id={id} />
           <SaveReadmeFileButton />
         </div>
       </div>
