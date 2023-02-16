@@ -19,7 +19,7 @@ function EditorPageFileNotExist(): JSX.Element {
             404-File Not Found
           </h3>
           <p className="mt-4 text-sm text-center text-[#696969] font-normal tracking-wide">
-            You're trying to access or find the file that does not exist. Go to{" "}
+            You&#39;re trying to access or find the file that does not exist. Go to{" "}
             <Link href="/files" aria-label="Files page" className="text-[#f1f1f1] no-underline hover:underline">
               Files
             </Link>{" "}
