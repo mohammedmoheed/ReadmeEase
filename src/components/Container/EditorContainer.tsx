@@ -2,7 +2,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Editor from "@monaco-editor/react";
 import { useState } from "react";
-import { EditorTitleBar } from "@/components/Banner";
+import { EditorTitlebar } from "@/components/Banner";
 
 function EditorContainer({
   id,
@@ -21,7 +21,7 @@ function EditorContainer({
 
   return (
     <>
-      <EditorTitleBar id={id} fileName={fileName} body={code} />
+      <EditorTitlebar id={id} fileName={fileName} body={code} />
       <div className="relative flex flex-col md:flex-row items-center md:items-start w-full">
         <div className="relative flex flex-col items-start justify-start min-w-[280px] w-full max-w-full md:max-w-[50%] h-auto overflow-y-hidden">
           <div className="p-2 flex items-center justify-start w-full bg-[#1e1f23] border-b border-r border-solid border-b-[#333] border-r-[#333]">
