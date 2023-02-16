@@ -2,6 +2,7 @@ import PageHeader from "@/components/Page/Header";
 import { Footer, Header } from "@/components/Banner";
 import { Barlow_Condensed, Poppins } from "@next/font/google";
 import Link from "next/link";
+import { FaqContainer } from "@/components/Container";
 
 const barlowCondensed = Barlow_Condensed({
   display: "swap",
@@ -58,6 +59,7 @@ export default function Home(): JSX.Element {
                 </div>
               </div>
             </div>
+            <FaqContainer />
           </div>
         </div>
       </main>

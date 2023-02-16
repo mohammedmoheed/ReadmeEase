@@ -8,6 +8,7 @@ import Trash from "./Trash";
 import DoubleRightArrow from "./DoubleRightArrow";
 import DoubleLeftArrow from "./DoubleLeftArrow";
 import RELogo from "./RELogo";
+import DownArrow from "./DownArrow";
 
 export {
   Bookmark,
@@ -20,4 +21,5 @@ export {
   Plus,
   RELogo,
   Trash,
+  DownArrow
 };
