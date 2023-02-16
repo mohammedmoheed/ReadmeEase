@@ -1,4 +1,4 @@
-# README-EASE
+# ReadmeEase
 
 **ReadmeEase** is a cutting-edge platform designed to simplify the creation of high-quality README files. With its user-friendly drag and drop interface, users can easily design and customize their README files with ease. The platform is built using Next.js and Tailwind CSS, offering a fast, responsive, and visually appealing experience. Whether you're a developer, designer, or documentarian, ReadmeEase is the perfect solution for creating professional README files with ease
 
