@@ -12,7 +12,7 @@ function EditorTitleBar({
   id: string | string[];
   fileName: string;
   body: string;
-}) {
+}): JSX.Element {
   return (
     <nav className="flex items-center justify-start w-full bg-[#111] border-b border-solid border-b-[#333]">
       <div className="px-4 py-2 flex items-center justify-between w-auto flex-auto h-auto">
