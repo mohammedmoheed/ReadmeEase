@@ -2,6 +2,8 @@ import PageHeader from "@/components/Page/Header";
 import { Poppins } from "@next/font/google";
 import { EditorPageContainer } from "@/components/Container";
 import { Header, Footer } from "@/components/Banner";
+import { useRouter } from "next/router";
+import EditorPageSkeleton from "@/components/Skeleton/EditorPageSkeleton";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -11,6 +13,9 @@ const poppins = Poppins({
 });
 
 export default function EditorIdPage() {
+  const router = useRouter();
+  const { id } = router.query;
+
   return (
     <div className={poppins.className}>
       <PageHeader
@@ -19,7 +24,7 @@ export default function EditorIdPage() {
       />
       <Header />
       <main className="block w-full">
-        <EditorPageContainer />
+        {!id ? <EditorPageSkeleton /> : <EditorPageContainer />}
       </main>
       <Footer />
     </div>
