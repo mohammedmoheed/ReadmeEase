@@ -20,7 +20,13 @@ export default function FilePage() {
       />
       <Header />
       <main className="relative w-full h-auto">
-        <div className="mx-auto py-10 px-6 max-w-[1440px] w-full">
+        <div
+          className={`mx-auto py-10 px-6 max-w-[1440px] w-full h-full ${
+            process.env.NODE_ENV === "development"
+              ? "min-h-[calc(100vh-162px)]"
+              : "min-h-[calc(100vh-122px)]"
+          }`}
+        >
           <div className="flex flex-row items-center justify-between w-full">
             <CreateReadmeFileButton />
           </div>
